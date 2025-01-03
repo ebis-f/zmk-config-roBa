@@ -49,6 +49,13 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        pw: pw {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp KP_NUMBER_0 &kp KP_NUMBER_8 &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_2 &kp KP_NUMBER_7>;
+            label = "PW";
+        };
     };
 
     behaviors {
@@ -90,7 +97,7 @@
 &none   &kp PLUS      &none   &none           &none                                        &none   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0
 &none   &kp MINUS     &none   &kp LEFT        &kp UP_ARROW  &kp RIGHT      &kp COLON       &none   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PERIOD
 &none   &kp ASTERISK  &none   &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &kp UNDERSCORE  &none   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp SLASH
-&trans  &kp EQUAL     &trans  &trans          &trans        &trans         &trans          &trans                                                     &kp DELETE
+&trans  &kp EQUAL     &trans  &trans          &trans        &trans         &pw             &trans                                                     &kp DELETE
             >;
         };
 
