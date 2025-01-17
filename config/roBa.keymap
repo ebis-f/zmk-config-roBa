@@ -130,14 +130,14 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&kp ESCAPE  &trans     &trans     &trans     &kp UP_ARROW                                   &trans                     &trans    &trans  &trans  &kp LC(P)
+&kp LC(A)   &trans     &trans     &kp LEFT   &kp DOWN      &kp RIGHT      &kp LC(KP_PLUS)   &trans                     &mkp MB5  &trans  &trans  &trans
+&kp LC(Z)   &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Y)     &trans         &kp LC(KP_MINUS)  &trans                     &mkp MB4  &trans  &trans  &trans
+&trans      &trans     &trans     &trans     &trans        &trans         &trans            &mt LANGUAGE_2 LANGUAGE_1                            &kp DEL
             >;
         };
 
-        layer_6 {
+        Bluetooth {
             bindings = <
 &trans  &trans        &trans        &trans        &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
