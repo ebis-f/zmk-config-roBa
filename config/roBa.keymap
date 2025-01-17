@@ -108,12 +108,12 @@
             >;
         };
 
-        ARROW {
+        SYMBOL {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
+&kp ESCAPE  &none           &kp GRAVE        &kp SQT        &trans                                   &kp AT_SIGN        &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS
+&kp HOME    &none           &kp BACKSLASH    &kp SEMICOLON  &kp COLON  &trans      &kp LESS_THAN     &kp GREATER_THAN   &kp DOLLAR       &kp PERCENT           &kp AMPERSAND          &kp UNDERSCORE
+&kp END     &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp PIPE       &kp CARET  &trans      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EXCLAMATION  &kp DOUBLE_QUOTES     &kp HASH               &kp QUESTION
+&trans      &trans          &trans           &trans         &trans     &trans      &trans            &trans                                                                           &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
