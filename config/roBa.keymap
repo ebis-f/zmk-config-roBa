@@ -63,6 +63,13 @@
             bindings = <&kp LS(R) &kp LS(M)>;
             label = "MAP_RM";
         };
+
+        kakko: kakko {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_1 &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT>;
+            label = "KAKKO";
+        };
     };
 
     behaviors {
@@ -81,10 +88,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W           &kp E         &kp R                   &kp T                                            &kp Y        &kp U  &lt 5 I   &kp O     &kp P
-&kp A             &kp S           &kp D         &kp F                   &kp G            &kp LS(LG(S))      &kp AT_SIGN  &kp H        &kp J  &kp K     &kp L     &lt 5 MINUS
-&mt LEFT_SHIFT Z  &kp X           &kp C         &kp V                   &kp B            &kp COMMA          &kp PERIOD   &kp N        &kp M  &mkp MB1  &mkp MB2  &mt RIGHT_SHIFT SLASH
-&kp LCTRL         &lt 1 LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 SPACE  &lt 5 LS(SPACE)  &lt 2 TAB          &lt 6 LG(D)  &lt 1 ENTER                             &kp BACKSPACE
+&kp Q             &kp W           &kp E         &kp R                   &kp T                                        &kp Y        &kp U  &lt 5 I   &kp O     &kp P
+&kp A             &kp S           &kp D         &kp F                   &kp G            &kakko         &kp AT_SIGN  &kp H        &kp J  &kp K     &kp L     &lt 5 MINUS
+&mt LEFT_SHIFT Z  &kp X           &kp C         &kp V                   &kp B            &kp COMMA      &kp PERIOD   &kp N        &kp M  &mkp MB1  &mkp MB2  &mt RIGHT_SHIFT SLASH
+&kp LCTRL         &lt 1 LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 SPACE  &lt 5 LS(SPACE)  &lt 2 TAB      &lt 6 DEL    &lt 1 ENTER                             &kp BACKSPACE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -130,10 +137,10 @@
 
         SCROLL {
             bindings = <
-&kp ESCAPE  &trans     &trans     &trans     &kp UP_ARROW                                   &trans                     &trans    &trans  &trans  &kp LC(P)
+&kp ESCAPE  &trans     &trans     &trans     &kp UP_ARROW                                   &kp RG(D)                  &trans    &trans  &trans  &kp LC(P)
 &kp LC(A)   &trans     &trans     &kp LEFT   &kp DOWN      &kp RIGHT      &kp LC(KP_PLUS)   &trans                     &mkp MB5  &trans  &trans  &trans
 &kp LC(Z)   &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Y)     &trans         &kp LC(KP_MINUS)  &trans                     &mkp MB4  &trans  &trans  &trans
-&trans      &trans     &trans     &trans     &trans        &trans         &trans            &mt LANGUAGE_2 LANGUAGE_1                            &kp DEL
+&trans      &trans     &trans     &trans     &trans        &trans         &kp LG(LS(S))     &mt LANGUAGE_2 LANGUAGE_1                            &kp DEL
             >;
         };
 
