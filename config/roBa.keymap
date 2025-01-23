@@ -108,10 +108,10 @@
 
         NUM {
             bindings = <
-&kp BACKSPACE    &kp N7        &kp N8        &kp N9        &kp N0                            &kp COLON             &kp N7        &kp N8        &kp N9        &kp N0
-&kp LA(LS(F12))  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp LS(F)  &kp F10      &none     &kp MINUS             &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PERIOD
-&kp LC(Z)        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &map_rm    &none        &none     &kp NON_US_BACKSLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
-&kp DEL          &trans        &none         &trans        &trans     &trans       &pw_name  &trans                                                          &kp UNDERSCORE
+&kp BACKSPACE    &kp N7        &kp N8        &kp N9        &kp N0                         &kp COLON             &kp N7        &kp N8        &kp N9        &kp N0
+&kp LA(LS(F12))  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp LS(F)  &kp F10      &none  &kp MINUS             &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PERIOD
+&kp LC(Z)        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &map_rm    &none        &none  &kp NON_US_BACKSLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
+&kp DEL          &trans        &none         &trans        &trans     &trans       &none  &kp F10                                                         &kp UNDERSCORE
             >;
         };
 
@@ -120,7 +120,7 @@
 &kp ESCAPE  &none           &kp GRAVE        &kp SQT        &trans                                   &kp AT_SIGN        &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS
 &kp HOME    &none           &kp BACKSLASH    &kp SEMICOLON  &kp COLON  &trans      &kp LESS_THAN     &kp GREATER_THAN   &kp DOLLAR       &kp PERCENT           &kp AMPERSAND          &kp UNDERSCORE
 &kp END     &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp PIPE       &kp CARET  &trans      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EXCLAMATION  &kp DOUBLE_QUOTES     &kp HASH               &kp QUESTION
-&trans      &trans          &trans           &trans         &trans     &trans      &trans            &trans                                                                           &kp DEL
+&trans      &trans          &trans           &trans         &trans     &trans      &pw_name          &trans                                                                           &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
