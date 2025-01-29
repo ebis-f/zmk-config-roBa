@@ -141,19 +141,19 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &none   &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &none   &none   &kp F4  &kp F5  &kp F6  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &kp DEL
+&trans  &trans  &trans  &trans  &trans                       &none   &kp F7  &kp F8  &kp F9  &kp F10
+&trans  &trans  &trans  &trans  &trans   &trans      &none   &none   &kp F4  &kp F5  &kp F6  &kp F11
+&trans  &trans  &trans  &trans  &trans   &trans      &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F12
+&trans  &trans  &trans  &trans  &remote  &trans      &trans  &trans                          &kp DEL
             >;
         };
 
         NUM {
             bindings = <
-&kp BACKSPACE    &kp N7        &kp N8        &kp N9        &kp N0                         &kp COLON             &kp N7        &kp N8        &kp N9        &kp N0
-&kp LA(LS(F12))  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp LS(F)  &kp F10      &none  &kp MINUS             &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PERIOD
-&kp LC(Z)        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &map_rm    &none        &none  &kp NON_US_BACKSLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
-&kp DEL          &trans        &none         &trans        &trans     &trans       &none  &kp F10                                                         &kp UNDERSCORE
+&kp BACKSPACE    &kp N7        &kp N8        &kp N9        &kp N0                                  &kp COLON             &kp N7        &kp N8        &kp N9        &kp N0
+&kp LA(LS(F12))  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp LS(F)  &kp F10      &kp UNDERSCORE  &kp MINUS             &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PERIOD
+&kp LC(Z)        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &map_rm    &none        &none           &kp NON_US_BACKSLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
+&kp DEL          &trans        &none         &trans        &trans     &trans       &none           &kp F10                                                         &kp DEL
             >;
         };
 
@@ -179,10 +179,10 @@
 
         SCROLL {
             bindings = <
-&kp ESCAPE  &trans           &dekara_split     &trans        &none                                    &kp RG(D)                  &trans    &remote   &trans        &kp LC(P)
-&kp LC(A)   &dekara_kasicut  &dekara_kasihari  &dekara_rubi  &none      &none       &kp LC(KP_PLUS)   &trans                     &mkp MB5  &trans    &kp UP_ARROW  &kp RIGHT
-&kp LC(Z)   &kp LC(X)        &kp LC(C)         &kp LC(V)     &kp LC(Y)  &trans      &kp LC(KP_MINUS)  &trans                     &mkp MB4  &kp LEFT  &kp DOWN      &trans
-&trans      &trans           &trans            &trans        &trans     &trans      &kp LG(LS(S))     &mt LANGUAGE_2 LANGUAGE_1                                    &kp DEL
+&kp ESCAPE  &trans           &dekara_split     &trans        &none                                    &kp F6                     &kp F7    &dekara_enctab  &trans        &kp LC(P)
+&kp LC(A)   &dekara_kasicut  &dekara_kasihari  &dekara_rubi  &none      &none       &kp LC(KP_PLUS)   &trans                     &mkp MB5  &trans          &kp UP_ARROW  &kp RIGHT
+&kp LC(Z)   &kp LC(X)        &kp LC(C)         &kp LC(V)     &kp LC(Y)  &trans      &kp LC(KP_MINUS)  &trans                     &mkp MB4  &kp LEFT        &kp DOWN      &trans
+&trans      &trans           &trans            &trans        &trans     &trans      &kp LG(LS(S))     &mt LANGUAGE_2 LANGUAGE_1                                          &kp DEL
             >;
         };
 
