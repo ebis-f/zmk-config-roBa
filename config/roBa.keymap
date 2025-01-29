@@ -70,6 +70,13 @@
             bindings = <&kp LANGUAGE_1 &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT>;
             label = "KAKKO";
         };
+
+        remote: remote {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANG1 &kp KP_NUMBER_2 &kp KP_NUMBER_2 &kp KP_NUMBER_0 &kp KP_NUMBER_8 &kp KP_NUMBER_7 &kp KP_NUMBER_7 &kp AT_SIGN &kp G &kp S &kp S &kp L &kp T &kp D &kp PERIOD &kp C &kp O &kp PERIOD &kp J &kp P &kp TAB &kp KP_NUMBER_7 &kp KP_NUMBER_7 &kp AT_SIGN &kp G &kp S &kp S &kp LS(G) &kp LS(S) &kp LS(S) &kp KP_NUMBER_2 &kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_9 &kp ENTER>;
+            label = "REMOTE";
+        };
     };
 
     behaviors {
@@ -137,7 +144,7 @@
 
         SCROLL {
             bindings = <
-&kp ESCAPE  &trans     &trans     &trans     &kp UP_ARROW                                   &kp RG(D)                  &trans    &trans  &trans  &kp LC(P)
+&kp ESCAPE  &trans     &remote    &trans     &kp UP_ARROW                                   &kp RG(D)                  &trans    &trans  &trans  &kp LC(P)
 &kp LC(A)   &trans     &trans     &kp LEFT   &kp DOWN      &kp RIGHT      &kp LC(KP_PLUS)   &trans                     &mkp MB5  &trans  &trans  &trans
 &kp LC(Z)   &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Y)     &trans         &kp LC(KP_MINUS)  &trans                     &mkp MB4  &trans  &trans  &trans
 &trans      &trans     &trans     &trans     &trans        &trans         &kp LG(LS(S))     &mt LANGUAGE_2 LANGUAGE_1                            &kp DEL
