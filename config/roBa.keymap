@@ -79,7 +79,9 @@
                 <&macro_wait_time 50>,
                 <&kp TAB>,
                 <&macro_wait_time 100>,
-                <&kp N7 &kp N7 &kp AT_SIGN &kp G &kp S &kp S &kp LS(G) &kp LS(S) &kp LS(S) &kp NUMBER_2 &kp N0 &kp NUMBER_1 &kp N9 &kp ENTER>;
+                <&kp N7 &kp N7 &kp AT_SIGN>,
+                <&macro_wait_time 100>,
+                <&kp G &kp S &kp S &kp LS(G) &kp LS(S) &kp LS(S) &kp NUMBER_2 &kp N0 &kp NUMBER_1 &kp N9 &kp ENTER>;
 
             label = "REMOTE";
         };
