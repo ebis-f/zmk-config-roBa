@@ -77,6 +77,41 @@
             bindings = <&kp LANG2 &kp NUMBER_2 &kp NUMBER_2 &kp N0 &kp N8 &kp N7 &kp N7 &kp AT_SIGN &kp G &kp S &kp S &kp C &kp O &kp R &kp P &kp PERIOD &kp G &kp S &kp S &kp L &kp T &kp D &kp PERIOD &kp C &kp O &kp PERIOD &kp J &kp P &kp TAB &kp N7 &kp N7 &kp AT_SIGN &kp G &kp S &kp S &kp LS(G) &kp LS(S) &kp LS(S) &kp NUMBER_2 &kp N0 &kp NUMBER_1 &kp N9>;
             label = "REMOTE";
         };
+
+        dekara_kasihari: dekara_kasihari {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(TAB) &kp LS(TAB) &kp LS(TAB) &kp LS(TAB) &kp LS(TAB) &kp LS(TAB) &kp LS(TAB) &kp LC(V) &kp LC(HOME)>;
+            label = "DEKARA_KASIHARI";
+        };
+
+        dekara_kasicut: dekara_kasicut {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LS(END)) &kp LC(X)>;
+            label = "DEKARA_KASICUT";
+        };
+
+        dekara_rubi: dekara_rubi {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp LEFT_BRACKET &kp SPACE &kp SEMICOLON &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp RIGHT_BRACKET>;
+            label = "DEKARA_RUBI";
+        };
+
+        dekara_split: dekara_split {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mkp MB2 &kp L>;
+            label = "DEKARA_SPLIT";
+        };
+
+        dekara_enctab: dekara_enctab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F8 &kp TAB &kp TAB &kp END>;
+            label = "DEKARA_ENCTAB";
+        };
     };
 
     behaviors {
@@ -144,10 +179,10 @@
 
         SCROLL {
             bindings = <
-&kp ESCAPE  &trans     &remote    &trans     &kp UP_ARROW                                   &kp RG(D)                  &trans    &trans  &trans  &kp LC(P)
-&kp LC(A)   &trans     &trans     &kp LEFT   &kp DOWN      &kp RIGHT      &kp LC(KP_PLUS)   &trans                     &mkp MB5  &trans  &trans  &trans
-&kp LC(Z)   &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Y)     &trans         &kp LC(KP_MINUS)  &trans                     &mkp MB4  &trans  &trans  &trans
-&trans      &trans     &trans     &trans     &trans        &trans         &kp LG(LS(S))     &mt LANGUAGE_2 LANGUAGE_1                            &kp DEL
+&kp ESCAPE  &trans           &dekara_split     &trans        &none                                    &kp RG(D)                  &trans    &remote   &trans        &kp LC(P)
+&kp LC(A)   &dekara_kasicut  &dekara_kasihari  &dekara_rubi  &none      &none       &kp LC(KP_PLUS)   &trans                     &mkp MB5  &trans    &kp UP_ARROW  &kp RIGHT
+&kp LC(Z)   &kp LC(X)        &kp LC(C)         &kp LC(V)     &kp LC(Y)  &trans      &kp LC(KP_MINUS)  &trans                     &mkp MB4  &kp LEFT  &kp DOWN      &trans
+&trans      &trans           &trans            &trans        &trans     &trans      &kp LG(LS(S))     &mt LANGUAGE_2 LANGUAGE_1                                    &kp DEL
             >;
         };
 
