@@ -74,7 +74,13 @@
         remote: remote {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp NUMBER_2 &kp NUMBER_2 &kp N0 &kp N8 &kp N7 &kp N7 &kp AT_SIGN &kp G &kp S &kp S &kp C &kp O &kp R &kp P &kp PERIOD &kp G &kp S &kp S &kp L &kp T &kp D &kp PERIOD &kp C &kp O &kp PERIOD &kp J &kp P &kp TAB &kp N7 &kp N7 &kp AT_SIGN &kp G &kp S &kp S &kp LS(G) &kp LS(S) &kp LS(S) &kp NUMBER_2 &kp N0 &kp NUMBER_1 &kp N9 &kp ENTER>;
+            bindings =
+                <&kp NUMBER_2 &kp NUMBER_2 &kp N0 &kp N8 &kp N7 &kp N7 &kp AT_SIGN &kp G &kp S &kp S &kp C &kp O &kp R &kp P &kp PERIOD &kp G &kp S &kp S &kp L &kp T &kp D &kp PERIOD &kp C &kp O &kp PERIOD &kp J &kp P>,
+                <&macro_wait_time 100>,
+                <&kp TAB>,
+                <&macro_wait_time 100>,
+                <&kp N7 &kp N7 &kp AT_SIGN &kp G &kp S &kp S &kp LS(G) &kp LS(S) &kp LS(S) &kp NUMBER_2 &kp N0 &kp NUMBER_1 &kp N9 &kp ENTER>;
+
             label = "REMOTE";
         };
 
@@ -141,10 +147,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans      &trans                       &none   &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans      &trans   &trans      &none   &none   &kp F4  &kp F5  &kp F6  &kp F11
-&trans  &trans  &trans  &trans      &trans   &trans      &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F12
-&trans  &trans  &trans  &remote_pw  &remote  &trans      &trans  &trans                          &kp DEL
+&trans  &trans  &trans  &trans  &trans                       &none   &kp F7  &kp F8  &kp F9  &kp F10
+&trans  &trans  &trans  &trans  &trans   &trans      &none   &none   &kp F4  &kp F5  &kp F6  &kp F11
+&trans  &trans  &trans  &trans  &trans   &trans      &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F12
+&trans  &trans  &trans  &none   &remote  &trans      &trans  &trans                          &kp DEL
             >;
         };
 
