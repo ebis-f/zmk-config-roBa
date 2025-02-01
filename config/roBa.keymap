@@ -71,13 +71,6 @@
             label = "KAKKO";
         };
 
-        remote: remote {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp NUMBER_2 &kp NUMBER_2 &kp N0 &kp N8 &kp N7 &kp N7 &kp AT_SIGN &kp G &kp S &kp S &kp C &kp O &kp R &kp P &kp PERIOD &kp G &kp S &kp S &kp L &kp T &kp D &kp PERIOD &kp C &kp O &kp PERIOD &kp J &kp P>;
-            label = "REMOTE";
-        };
-
         dekara_kasihari: dekara_kasihari {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -132,13 +125,7 @@
                 <&macro_wait_time 100>,
                 <&kp TAB>,
                 <&macro_wait_time 100>,
-                <&kp LG(INS)>,
-                <&macro_wait_time 50>,
-                <&kp ENTER>,
-                <&macro_wait_time 3000>,
-                <&kp TAB &kp SPACE>,
-                <&macro_wait_time 50>,
-                <&kp TAB &kp ENTER>;
+                <&kp LG(INS) &kp ENTER>;
 
             label = "REMOTE2";
         };
