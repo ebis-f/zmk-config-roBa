@@ -134,7 +134,11 @@
                 <&macro_wait_time 100>,
                 <&kp LG(INS)>,
                 <&macro_wait_time 50>,
-                <&kp ENTER>;
+                <&kp ENTER>,
+                <&macro_wait_time 3000>,
+                <&kp TAB &kp SPACE>,
+                <&macro_wait_time 50>,
+                <&kp TAB &kp ENTER>;
 
             label = "REMOTE2";
         };
