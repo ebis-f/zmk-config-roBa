@@ -159,8 +159,8 @@
         FUNCTION {
             bindings = <
 &trans  &trans  &trans  &trans    &trans                                            &none   &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans    &kp INSERT       &kp LG(INS)              &none   &none   &kp F4  &kp F5  &kp F6  &kp F11
-&trans  &trans  &trans  &trans    &kp PAUSE_BREAK  &kp LG(PAUSE_BREAK)      &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F12
+&trans  &trans  &trans  &trans    &kp PAUSE_BREAK  &kp LG(PAUSE_BREAK)      &none   &none   &kp F4  &kp F5  &kp F6  &kp F11
+&trans  &trans  &trans  &trans    &kp INSERT       &kp LG(INSERT)           &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F12
 &trans  &trans  &trans  &remote2  &none            &trans                   &trans  &trans                          &kp DEL
             >;
         };
