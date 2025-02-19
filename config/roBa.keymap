@@ -167,10 +167,10 @@
 
         NUM {
             bindings = <
-&kp BACKSPACE    &kp N7        &kp N8        &kp N9        &kp N0                                  &kp COLON             &kp N7        &kp N8        &kp N9        &kp N0
-&kp LA(LS(F12))  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp LS(F)  &kp F10      &kp UNDERSCORE  &kp MINUS             &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PERIOD
-&kp LC(Z)        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &map_rm    &none        &none           &kp NON_US_BACKSLASH  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
-&kp DEL          &trans        &none         &trans        &trans     &trans       &none           &kp F10                                                         &kp DEL
+&kp BACKSPACE    &kp N7        &kp N8        &kp N9        &kp N0                                  &none      &kp N7        &kp N8        &kp N9        &kp N0
+&kp LA(LS(F12))  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp LS(F)  &kp F10      &kp UNDERSCORE  &kp MINUS  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PERIOD
+&kp LC(Z)        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &map_rm    &none        &kp BACKSLASH   &kp COLON  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
+&kp DEL          &trans        &none         &trans        &trans     &trans       &none           &kp F10                                              &kp DEL
             >;
         };
 
