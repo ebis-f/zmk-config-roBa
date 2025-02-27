@@ -140,6 +140,13 @@
 
             label = "DEKARA_MAEE";
         };
+
+        m_address: m_address {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp K &kp O &kp E &kp PERIOD &kp NUMBER_2 &kp NUMBER_1 &kp MINUS &kp N9 &kp NUMBER_2 &kp N7 &kp AT_SIGN &kp O &kp U &kp T &kp L &kp O &kp O &kp K &kp PERIOD &kp J &kp P>;
+            label = "M_ADDRESS";
+        };
     };
 
     behaviors {
@@ -172,7 +179,7 @@
 &trans  &trans  &trans  &trans    &trans                                            &none   &kp F7  &kp F8  &kp F9  &kp F10
 &trans  &trans  &trans  &trans    &kp PAUSE_BREAK  &kp LG(PAUSE_BREAK)      &none   &none   &kp F4  &kp F5  &kp F6  &kp F11
 &trans  &trans  &trans  &trans    &kp INSERT       &kp LG(INSERT)           &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F12
-&trans  &trans  &trans  &remote2  &none            &trans                   &trans  &trans                          &kp DEL
+&trans  &trans  &trans  &remote2  &none            &m_address               &trans  &trans                          &kp DEL
             >;
         };
 
