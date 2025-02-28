@@ -88,7 +88,7 @@
         dekara_rubi: dekara_rubi {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANGUAGE_2 &kp LEFT_BRACKET &kp SPACE &kp SEMICOLON &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp RIGHT_BRACKET>;
+            bindings = <&kp LANGUAGE_2 &kp LEFT_BRACKET &kp SPACE &kp SEMICOLON &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp RIGHT_BRACKET &kp LANG1>;
             label = "DEKARA_RUBI";
         };
 
@@ -146,6 +146,13 @@
             #binding-cells = <0>;
             bindings = <&kp LANGUAGE_2 &kp K &kp O &kp E &kp PERIOD &kp NUMBER_2 &kp NUMBER_1 &kp MINUS &kp N9 &kp NUMBER_2 &kp N7 &kp AT_SIGN &kp O &kp U &kp T &kp L &kp O &kp O &kp K &kp PERIOD &kp J &kp P>;
             label = "M_ADDRESS";
+        };
+
+        kana_space: kana_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_1 &kp SPACE>;
+            label = "KANA_SPACE";
         };
     };
 
