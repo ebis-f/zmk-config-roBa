@@ -40,6 +40,11 @@
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
         };
+
+        scroll {
+            bindings = <&lt 5 LEFT_SHIFT>;
+            key-positions = <31 32>;
+        };
     };
 
     macros {
