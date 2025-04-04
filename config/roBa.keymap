@@ -243,7 +243,7 @@
 &kp ESCAPE  &trans           &dekara_split     &trans        &dekara_maee                                     &kp F6                     &kp F7    &dekara_enctab  &trans        &kp HOME
 &kp LC(A)   &dekara_kasicut  &dekara_kasihari  &dekara_rubi  &none         &map_delete      &kp LC(KP_PLUS)   &trans                     &mkp MB5  &kp LEFT        &kp UP_ARROW  &kp RIGHT
 &kp LC(Z)   &kp LC(X)        &kp LC(C)         &kp LC(V)     &kp LC(Y)     &trans           &kp LC(KP_MINUS)  &trans                     &mkp MB4  &none           &kp DOWN      &kp END
-&pw_name    &trans           &trans            &trans        &trans        &trans           &none             &mt LANGUAGE_2 LANGUAGE_1                                          &kp DEL
+&pw_name    &trans           &trans            &trans        &trans        &trans           &kp DEL           &mt LANGUAGE_2 LANGUAGE_1                                          &kp BACKSPACE
             >;
         };
 
