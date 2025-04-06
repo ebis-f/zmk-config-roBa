@@ -177,7 +177,7 @@
         rubi_kakko: rubi_kakko {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT_BRACKET &kp F10 &kp ENTER>;
+            bindings = <&kp BACKSPACE &kp RIGHT_BRACKET &kp F10 &kp ENTER>;
             label = "RUBI_KAKKO";
         };
     };
