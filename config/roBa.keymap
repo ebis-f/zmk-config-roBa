@@ -173,6 +173,13 @@
             bindings = <&kp F10 &kp ENTER>;
             label = "HANKAKU_ENTER";
         };
+
+        rubi_kakko: rubi_kakko {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT_BRACKET &kp F10 &kp ENTER>;
+            label = "RUBI_KAKKO";
+        };
     };
 
     behaviors {
@@ -242,7 +249,7 @@
             bindings = <
 &kp ESCAPE  &trans           &dekara_split     &trans        &dekara_maee                                     &kp F6                     &kp F7    &dekara_enctab  &trans        &kp HOME
 &kp LC(A)   &dekara_kasicut  &dekara_kasihari  &dekara_rubi  &none         &map_delete      &kp LC(KP_PLUS)   &trans                     &mkp MB5  &kp LEFT        &kp UP_ARROW  &kp RIGHT
-&kp LC(Z)   &kp LC(X)        &kp LC(C)         &kp LC(V)     &kp LC(Y)     &trans           &kp LC(KP_MINUS)  &trans                     &mkp MB4  &none           &kp DOWN      &kp END
+&kp LC(Z)   &kp LC(X)        &kp LC(C)         &kp LC(V)     &kp LC(Y)     &trans           &kp LC(KP_MINUS)  &rubi_kakko                &mkp MB4  &none           &kp DOWN      &kp END
 &pw_name    &trans           &trans            &trans        &trans        &trans           &kp DEL           &mt LANGUAGE_2 LANGUAGE_1                                          &kp BACKSPACE
             >;
         };
