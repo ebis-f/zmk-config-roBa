@@ -218,7 +218,7 @@
 
         NUM {
             bindings = <
-&kp BACKSPACE  &none   &none            &none   &none                                  &none           &kp N7        &kp N8        &kp N9        &kp N0
+&kp BACKSPACE  &none   &none            &none   &none                                  &kp N0          &kp N7        &kp N8        &kp N9        &kp N0
 &none          &none   &kp LA(LS(F12))  &none   &kp LS(F)  &none       &kp UNDERSCORE  &kp MINUS       &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PERIOD
 &kp LC(Z)      &none   &none            &none   &map_rm    &none       &kp BACKSLASH   &kp COLON       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
 &kp DEL        &trans  &none            &trans  &trans     &trans      &none           &Hankaku_enter                                            &kp DELETE
