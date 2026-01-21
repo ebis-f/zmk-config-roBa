@@ -80,7 +80,7 @@
             bindings = <
 &kp ESCAPE  &kp LCTRL       &kp TILDE      &kp LEFT_BRACE    &kp RIGHT_BRACE                            &none          &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
 &none       &kp PLUS        &kp COLON      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans      &kp COMMA   &none          &kp DOLLAR       &kp PERCENT           &kp AMPERSAND          &kp MINUS
-&kp TILDE   &kp UNDERSCORE  &kp SEMICOLON  &kp LESS_THAN     &kp GREATER_THAN   &kp AT      &kp PERIOD  &kp BACKSLASH  &kp EXCLAMATION  &kp DOUBLE_QUOTES     &kp HASH               &kp SLASH
+&kp TILDE   &kp UNDERSCORE  &kp SEMICOLON  &kp LESS_THAN     &kp GREATER_THAN   &kp AT      &kp PERIOD  &kp JP_YEN  &kp EXCLAMATION  &kp DOUBLE_QUOTES     &kp HASH               &kp SLASH
 &trans      &trans          &trans         &trans            &trans             &trans      &trans      &trans                                                                       &kp DEL
             >;
 
