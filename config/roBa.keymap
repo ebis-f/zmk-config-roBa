@@ -256,7 +256,7 @@
         SYMBOL {
             bindings = <
 &kp ESCAPE    &kp PLUS      &kp GRAVE      &kp SQT        &kp DOUBLE_QUOTES                                         &kp AT_SIGN        &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS
-&kp LC(HOME)  &kp MINUS     &kp JP YEN  &kp SEMICOLON  &kp COLON          &kp EQUAL            &kp LESS_THAN     &kp GREATER_THAN   &kp DOLLAR       &kp PERCENT           &kp AMPERSAND          &kp UNDERSCORE
+&kp LC(HOME)  &kp MINUS     &kp JP_YEN  &kp SEMICOLON  &kp COLON          &kp EQUAL            &kp LESS_THAN     &kp GREATER_THAN   &kp DOLLAR       &kp PERCENT           &kp AMPERSAND          &kp UNDERSCORE
 &kp LC(END)   &kp ASTERISK  &none          &kp PIPE       &kp LEFT_BRACE     &kp RIGHT_BRACE      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EXCLAMATION  &kp DOUBLE_QUOTES     &kp HASH               &kp QUESTION
 &trans        &kp SLASH     &trans         &trans         &trans             &trans               &none             &Hankaku_enter                                                                   &kp DELETE
             >;
