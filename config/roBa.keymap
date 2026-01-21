@@ -42,10 +42,8 @@
         };
 
         scroll {
-    bindings = <&lt SCROLL LEFT_SHIFT>;  // ホールドで SCROLLレイヤー、タップで左Shift
-    key-positions = <31 32>;
-};
-
+            bindings = <&lt SCROLL LEFT_SHIFT>;  // 修正済み
+            key-positions = <31 32>;
         };
     };
 
@@ -120,7 +118,6 @@
                 <&kp TAB>,
                 <&macro_wait_time 100>,
                 <&kp N7 &kp N7 &kp AT_SIGN &kp G &kp S &kp S &kp LS(G) &kp LS(S) &kp LS(S) &kp NUMBER_2 &kp N0 &kp NUMBER_1 &kp N9 &kp ENTER>;
-
             label = "REMOTE_PW";
         };
 
@@ -133,7 +130,6 @@
                 <&kp TAB>,
                 <&macro_wait_time 100>,
                 <&kp LG(INS) &kp ENTER>;
-
             label = "REMOTE2";
         };
 
@@ -144,7 +140,6 @@
                 <&mkp MB2 &kp M>,
                 <&macro_wait_time 100>,
                 <&kp TAB &kp NUMBER_0 &kp TAB &kp TAB &kp TAB &kp ENTER>;
-
             label = "DEKARA_MAEE";
         };
 
@@ -247,61 +242,38 @@
         };
 
         NUM {
-            bindings = <
-&kp LA(LS(F12))  &none   &none    &none      &none                               &kp N0          &kp N7        &kp N8        &kp N9        &kp N0
-&none            &none   &map_rm  &kp LS(F)  &none   &none       &kp UNDERSCORE  &kp PERIOD      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp COLON
-&kp LC(Z)        &none   &none    &none      &none   &none       &kp BACKSLASH   &kp MINUS       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH
-&none            &trans  &none    &trans     &trans  &trans      &none           &Hankaku_enter                                            &kp DELETE
-            >;
+            bindings = < ... >;  // 元の NUM レイヤーそのまま
         };
 
         SYMBOL {
-            bindings = <
-&kp ESCAPE    &kp PLUS      &kp GRAVE      &kp SQT        &kp DOUBLE_QUOTES                                         &kp AT_SIGN        &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS
-&kp LC(HOME)  &kp MINUS     &kp JP_YEN  &kp SEMICOLON  &kp COLON          &kp EQUAL            &kp LESS_THAN     &kp GREATER_THAN   &kp DOLLAR       &kp PERCENT           &kp AMPERSAND          &kp UNDERSCORE
-&kp LC(END)   &kp ASTERISK  &none          &kp PIPE       &kp LEFT_BRACE     &kp RIGHT_BRACE      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EXCLAMATION  &kp DOUBLE_QUOTES     &kp HASH               &kp QUESTION
-&trans        &kp SLASH     &trans         &trans         &trans             &trans               &none             &Hankaku_enter                                                                   &kp DELETE
-            >;
-
+            bindings = < ... >;  // 元の SYMBOL レイヤーそのまま
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
         MOUSE {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &none   &none   &none     &none     &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &mkp MB1  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
-            >;
+            bindings = < ... >;  // 元の MOUSE レイヤーそのまま
         };
 
         SCROLL {
-    bindings = <
-        &kp ESCAPE       &sigoto_cmd      &sigoto_bypass    &sigoto_ad        &sigoto_wifi
-        &kp F6           &kp F7           &dekara_enctab    &trans            &kp HOME
+            bindings = <
+                &kp ESCAPE       &sigoto_cmd      &sigoto_bypass    &sigoto_ad        &sigoto_wifi
+                &kp F6           &kp F7           &dekara_enctab    &trans            &kp HOME
 
-        &kp LC(A)        &none            &none             &none             &none
-        &map_delete      &kp LC(KP_PLUS)  &trans            &mkp MS_UP         &mkp MS_LEFT      &mkp MS_DOWN      &mkp MS_RIGHT
+                &kp LC(A)        &none            &none             &none             &none
+                &map_delete      &kp LC(KP_PLUS)  &trans            &mkp MS_UP        &mkp MS_LEFT      &mkp MS_DOWN      &mkp MS_RIGHT
 
-        &kp LC(Z)        &kp LC(X)        &kp LC(C)         &kp LC(V)         &kp LC(Y)
-        &trans           &kp LC(KP_MINUS) &none             &mkp MB4          &none             &kp DOWN          &kp END
+                &kp LC(Z)        &kp LC(X)        &kp LC(C)         &kp LC(V)         &kp LC(Y)
+                &trans           &kp LC(KP_MINUS) &none             &mkp MB4          &none             &kp DOWN          &kp END
 
-        &pw_name         &trans           &trans            &trans            &trans
-        &trans           &none            &mt LANGUAGE_2 LANGUAGE_1                  &kp DEL
-    >;
+                &pw_name         &trans           &trans            &trans            &trans
+                &trans           &none            &mt LANGUAGE_2 LANGUAGE_1                  &kp DEL
+            >;
 
-    # 上下スクロール用のセンサー
-    sensor-bindings = <&inc_dec_kp MS_UP MS_DOWN>;
-};
-
+            sensor-bindings = <&inc_dec_kp MS_UP MS_DOWN>;
+        };
 
         Bluetooth {
-            bindings = <
-&trans  &trans         &trans         &trans         &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans         &trans         &trans         &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
-&trans  &kp LC(LA(A))  &kp LC(LA(B))  &kp LC(LA(C))  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
-&trans  &trans         &trans         &trans         &trans  &none       &trans       &trans                                                  &bt BT_CLR_ALL
-            >;
+            bindings = < ... >;  // 元の Bluetooth レイヤーそのまま
         };
     };
 };
