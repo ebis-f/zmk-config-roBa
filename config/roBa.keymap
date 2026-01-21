@@ -42,8 +42,10 @@
         };
 
         scroll {
-            bindings = <&lt 5 LEFT_SHIFT>;
-            key-positions = <31 32>;
+    bindings = <&lt SCROLL LEFT_SHIFT>;  // ホールドで SCROLLレイヤー、タップで左Shift
+    key-positions = <31 32>;
+};
+
         };
     };
 
@@ -274,13 +276,24 @@
         };
 
         SCROLL {
-            bindings = <
-&kp ESCAPE  &sigoto_cmd  &sigoto_bypass  &sigoto_ad  &sigoto_wifi                                     &kp F6                     &kp F7    &dekara_enctab  &trans        &kp HOME
-&kp LC(A)   &none        &none           &none       &none         &map_delete      &kp LC(KP_PLUS)   &trans                     &mkp MB5  &kp LEFT        &kp UP_ARROW  &kp RIGHT
-&kp LC(Z)   &kp LC(X)    &kp LC(C)       &kp LC(V)   &kp LC(Y)     &trans           &kp LC(KP_MINUS)  &none                      &mkp MB4  &none           &kp DOWN      &kp END
-&pw_name    &trans       &trans          &trans      &trans        &trans           &none             &mt LANGUAGE_2 LANGUAGE_1                                          &kp DEL
-            >;
-        };
+    bindings = <
+        &kp ESCAPE       &sigoto_cmd      &sigoto_bypass    &sigoto_ad        &sigoto_wifi
+        &kp F6           &kp F7           &dekara_enctab    &trans            &kp HOME
+
+        &kp LC(A)        &none            &none             &none             &none
+        &map_delete      &kp LC(KP_PLUS)  &trans            &mkp MS_UP         &mkp MS_LEFT      &mkp MS_DOWN      &mkp MS_RIGHT
+
+        &kp LC(Z)        &kp LC(X)        &kp LC(C)         &kp LC(V)         &kp LC(Y)
+        &trans           &kp LC(KP_MINUS) &none             &mkp MB4          &none             &kp DOWN          &kp END
+
+        &pw_name         &trans           &trans            &trans            &trans
+        &trans           &none            &mt LANGUAGE_2 LANGUAGE_1                  &kp DEL
+    >;
+
+    # 上下スクロール用のセンサー
+    sensor-bindings = <&inc_dec_kp MS_UP MS_DOWN>;
+};
+
 
         Bluetooth {
             bindings = <
