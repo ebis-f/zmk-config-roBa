@@ -76,7 +76,7 @@
             >;
         };
 
-        SYMBOL {
+SYMBOL {
     bindings = <
 &kp ESCAPE  &kp LCTRL       &kp TILDE      &kp LBRC      &kp RBRC                      &none        &kp SQT     &kp LPAR   &kp RPAR   &trans
 &none       &kp PLUS        &kp COLON      &kp LBKT      &kp RBKT      &trans        &kp COMMA   &none       &kp DOLLAR &kp PERCENT   &kp AMPERSAND &kp MINUS
@@ -84,8 +84,6 @@
 &trans      &trans          &trans         &trans        &trans        &trans        &trans      &trans                                  &kp DEL
     >;
 };
-
-
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
