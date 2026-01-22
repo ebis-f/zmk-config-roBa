@@ -6,45 +6,8 @@
 #define SCROLL 5
 #define NUM 6
 
-&mt {
-    flavor = "balanced";
-    quick-tap-ms = <0>;
-};
-
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
-        };
-
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
-        };
-
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
-        };
-
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
-        };
-
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
-        };
-
-        scroll {
-            bindings = <&lt SCROLL LEFT_SHIFT>;  // 修正済み
-            key-positions = <31 32>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         to_layer_0: to_layer_0 {
@@ -236,14 +199,17 @@
             bindings = <
 
             >;
-  // 元の NUM レイヤーそのまま
+
+            // 元の NUM レイヤーそのまま
         };
 
         SYMBOL {
             bindings = <
 
             >;
-  // 元の SYMBOL レイヤーそのまま
+
+            // 元の SYMBOL レイヤーそのまま
+
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
@@ -251,7 +217,8 @@
             bindings = <
 
             >;
-  // 元の MOUSE レイヤーそのまま
+
+            // 元の MOUSE レイヤーそのまま
         };
 
         SCROLL {
@@ -269,7 +236,8 @@
             bindings = <
 
             >;
-  // 元の Bluetooth レイヤーそのまま
+
+            // 元の Bluetooth レイヤーそのまま
         };
     };
 };
